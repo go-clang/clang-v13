@@ -5,11 +5,13 @@
 
 Native Go bindings for Clang v13 C API.
 
+Generated from [llvmorg-13.0.1](https://github.com/llvm/llvm-project/releases/tag/llvmorg-13.0.1).
+
 ## Install/Update
 
-```bash
-CGO_LDFLAGS="-L`llvm-config --libdir`" \
-  go install github.com/go-clang/clang-v13/...
+```console
+CGO_LDFLAGS="-L$(llvm-config --libdir)" \
+  go install github.com/go-clang/clang-v13/clang@latest
 ```
 
 ## Usage
